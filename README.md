@@ -1,35 +1,49 @@
 # DRAXOR FT HELPER - Forensic Platform
 
 ![Forensics](https://img.shields.io/badge/Forensic-Tool-blue)
-![Status](https://img.shields.io/badge/status-Active-brightgreen)
+![Status](https://img.shields.io/badge/status-Stable%20since%202024-brightgreen)
 ![License](https://img.shields.io/badge/license-Apache%202.0-blue)
+
+---
 
 ## 🔍 Overview
 
-**DRAXOR FT HELPER** is a tactical forensic platform designed for advanced memory artifact analysis, anomaly detection, and stealth injection discovery. Built for investigators, red team analysts, and forensic researchers, this tool empowers analysts with machine learning models, driver mapping, and live artifact analysis in an intuitive GUI.
+**DRAXOR FT HELPER** is a tactical forensic platform for memory artifact analysis, stealth detection, hash validation, and advanced anomaly discovery using AI. Designed for digital forensics professionals, red team analysts, and reverse engineers, it provides a complete suite for investigating emulator-based or system-level manipulations.
 
-> Developed by **Anonymous S7 (Jay)** — founding member of the **World Forensic Tool Team**.
+> Developed by **Anonymous S7 (Jay)** — a member of the **World Forensic Tool Team**, the world’s largest digital forensic agency.
+
+📅 **Originally uploaded in 2024**, DRAXOR FT HELPER quickly gained recognition within the digital forensics community for its real-time memory analysis capabilities and stealth detection precision.
+
+---
+
+## 🌟 Official Recognition
+
+> _"The World Forensic Tool Team commends **Anonymous S7 (Jay)** for the development of DRAXOR FT HELPER — a highly advanced and precise forensic solution.  
+> This tool embodies excellence in deep memory inspection, anomaly detection, and real-time artifact analysis.  
+> Its contribution supports our global initiative to strengthen digital integrity and support forensic investigations."_  
+>  
+> — *World Forensic Tool Team, 2024*
 
 ---
 
 ## ✨ Features
 
-- 🧠 **AI-Powered Anomaly Detection** (Isolation Forest)
-- 📦 **Driver & Module Analysis** (modscan, driverscan)
-- 💥 **Memory Injection & Manual Mapping Detection**
-- 🔒 **Hash Integrity Checks** for executables and drivers
-- ⚠️ **Stealth Detection**: Hidden processes, ghost services, and RWX regions
-- 🧩 **UI Toolkit**: Built with `tkinter`, logs findings live with severity tags
-- 📤 **Report Export**: Save findings as XML and TXT forensic reports
+- ✅ **ML-Based Memory Anomaly Detection (Isolation Forest)**
+- 🧠 **Process Injection & RWX Memory Detection**
+- 🔍 **Hidden Driver and Orphan Process Discovery**
+- 📦 **Packed Binary & Signature Verification**
+- 📜 **Hash Integrity Validation for Binary Files**
+- 🛡️ **Live Logging Console with Critical Alerts**
+- 📤 **Export Reports in XML and TXT formats**
 
 ---
 
 ## 📁 File Structure
 
-- `2.py` - Main forensic platform GUI and core analysis engine
-- `output/` - Loaded memory artifacts
-- `Findings/` - Exported tactical reports
-- `Hashes/` - Stored SHA256 fingerprints for integrity validation
+- `2.py` - Main forensic engine and UI interface
+- `output/` - Memory dump text artifacts
+- `Findings/` - Scan results and exported reports
+- `Hashes/` - SHA256 digital fingerprints
 
 ---
 
@@ -37,7 +51,6 @@
 
 ### 🔧 Prerequisites
 
-- Python 3.8+
-- Install dependencies:
-  ```bash
-  pip install pefile numpy scikit-learn lief capstone
+Install required packages:
+```bash
+pip install numpy pefile scikit-learn lief capstone
