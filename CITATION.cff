@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this tool, please cite the following."
+authors:
+  - family-names: [JAY]
+    given-names: [Anonymous S7]
+    orcid: https://orcid.org/0000-0000-0000-0000
+title: DRAXOR FT HELPER
+version: 1.0.0
+date-released: 2024-04-01
+license: MIT
+url: https://github.com/AnonymousS7-99/draxor-ft-helper
